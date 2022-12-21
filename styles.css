@@ -1,0 +1,147 @@
+ 
+@font-face {
+    src: url("font/Digital7Mono-Yz9J4.ttf");
+    font-family: digital7;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e3e7f1;
+
+}
+/**/
+
+.main-container {
+    width: 575px;
+    height: 700px;
+    background: #1B244A;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    color: #EEEEEE;
+    line-height: 55px;
+}
+
+.sb-style {
+    color: #F94F6D;
+    font-size: 48px;
+    letter-spacing: 6px;
+    border-bottom: 5px solid #EEEEEE;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.home-flex-div {
+    margin-right: -50px;
+    /* background: #F94F6D; */
+    width: 200px;
+}
+
+.guest-fles-div {
+    /* background: #F94F6D; */
+    width: 200px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    color: #EEEEEE;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: digital7;
+    font-weight: 800;
+    font-size: 120px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background: #080001;
+    color: #F94F6D;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.increement-btns {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.incre-btn {
+    width: 45px;
+    height: 45px;
+    font-family: digital7;
+    font-size: 28px;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 5px;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.incre-btn:hover {
+    
+    background: #ffffff;
+    border-radius: 25px;
+    color: #1B244A;
+    border: none;
+    cursor: pointer;
+}
+
+/* h3 {
+    text-align: end;
+    font-size: 40px;
+    margin-top: 35px;
+    color: #EEEEEE;
+    margin-bottom: 0px;
+}
+
+#leading-team {
+    color: #1B244A;
+    background: #F5F3FF;
+    margin-top: 25px;
+    padding: 10px 0px;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+} */
+
+#new-game-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 400px;
+    height: 90px;
+    border-radius: 15px;
+    font-size: 48px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    background: #F94F6D;
+    color: #252525;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+#new-game-btn:hover {
+    background: transparent;
+    border-radius: 0px;
+    background: #c44f64;
+    color: #EEEEEE;
+}
