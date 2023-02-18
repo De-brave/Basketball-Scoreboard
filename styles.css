@@ -18,7 +18,7 @@ body {
 /* Style the main container */
 .main-container {
     width: 500px;
-    height: 670px;
+    height: 620px;
     background: #14253d;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -47,7 +47,7 @@ h1 {
 .flex-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 /* Style the home flex div */
@@ -142,7 +142,7 @@ p {
     margin-right: auto;
     margin-top: 50px;
     width: 400px;
-    height: 90px;
+    height: 80px;
     font-size: 48px;
     font-weight: 700;
     border: none;
