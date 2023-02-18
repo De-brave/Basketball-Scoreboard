@@ -1,26 +1,32 @@
- 
+/* Define a custom font face */
 @font-face {
     src: url("font/Digital7Mono-Yz9J4.ttf");
     font-family: digital7;
 }
 
+/* Style the body element */
 body {
     margin: 0;
+    display: grid;
+    height: 100vh;
+    place-items: center;
     font-family: 'Open Sans', sans-serif;
-    background-color: #9AABD8;
+    background-color: #0d192b;
 
 }
-/**/
 
+/* Style the main container */
 .main-container {
-    width: 575px;
-    height: 700px;
-    background: #1B244A;
-    margin-left: auto;
-    margin-right: auto;
+    width: 500px;
+    height: 670px;
+    background: #14253d;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 1px;
+    box-shadow: 1px 1px 10px #000000;
 }
 
+/* Style the h1 element */
 h1 {
     text-align: center;
     font-size: 64px;
@@ -29,6 +35,7 @@ h1 {
     line-height: 55px;
 }
 
+/* Style the element with the class "sb-style" */
 .sb-style {
     color: #F94F6D;
     font-size: 48px;
@@ -36,23 +43,25 @@ h1 {
     border-bottom: 5px solid #EEEEEE;
 }
 
+/* Style the flex container */
 .flex-container {
     display: flex;
     justify-content: space-around;
     margin-top: 80px;
 }
 
+/* Style the home flex div */
 .home-flex-div {
     margin-right: -50px;
-    /* background: #F94F6D; */
     width: 200px;
 }
 
+/* Style the guest flex div */
 .guest-fles-div {
-    /* background: #F94F6D; */
     width: 200px;
 }
 
+/* Style the h2 element */
 h2 {
     text-align: center;
     font-size: 40px;
@@ -61,6 +70,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Style the p element */
 p {
     font-family: digital7;
     font-weight: 800;
@@ -76,11 +86,13 @@ p {
     border-radius: 5px;
 }
 
+/* Style the increment buttons container */
 .increement-btns {
     text-align: center;
     margin-top: 25px;
 }
 
+/* Style the increment button */
 .incre-btn {
     width: 45px;
     height: 45px;
@@ -89,14 +101,14 @@ p {
     font-weight: 600;
     background: transparent;
     border-radius: 5px;
-    color: #9AABD8;
-    border: 2px solid #9AABD8;
+    color: #9aabd8;
+    border: 2px solid #8bacda;
     margin-left: 10px;
     cursor: pointer;
 }
 
+/* Style the increment button on hover */
 .incre-btn:hover {
-    
     background: #ffffff;
     border-radius: 25px;
     color: #1B244A;
@@ -104,6 +116,7 @@ p {
     cursor: pointer;
 }
 
+/* Style the h3 element /
 /* h3 {
     text-align: end;
     font-size: 40px;
@@ -112,6 +125,7 @@ p {
     margin-bottom: 0px;
 }
 
+/* Style the element with the ID "leading-team" /
 #leading-team {
     color: #1B244A;
     background: #F5F3FF;
@@ -121,6 +135,7 @@ p {
     text-align: center;
 } */
 
+/* Style the new game button */
 #new-game-btn {
     display: block;
     margin-left: auto;
@@ -128,20 +143,101 @@ p {
     margin-top: 50px;
     width: 400px;
     height: 90px;
-    border-radius: 15px;
     font-size: 48px;
     font-weight: 700;
     border: none;
-    border-radius: 15px;
     background: #F94F6D;
-    color: #252525;
+    color: #0d192b;
     cursor: pointer;
     transition: 0.2s ease-in;
 }
 
+/* Style the newg game button on hover */
 #new-game-btn:hover {
     background: transparent;
     border-radius: 0px;
     background: #c44f64;
-    color: #EEEEEE;
+    color: #2f415b;
+    border-radius: 15px;
+}
+
+/* Styles for small screens with a maximum width of 375px */
+@media screen and (max-width: 375px) {
+    
+    body {
+        height: 50px;
+    }
+
+    .main-container {
+        width: 320px;
+        height: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    h1 {
+        margin-top: 45px;
+        font-size: 36px;
+        line-height: 30px;
+    }
+    
+    .sb-style {
+        color: #F94F6D;
+        font-size: 26px;
+        letter-spacing: 6px;
+        border-bottom: 3px solid #EEEEEE;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    
+    .home-flex-div {
+        width: 200px;
+    }
+    
+    .guest-flex-div {
+        width: 200px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 0px;
+        color: #EEEEEE;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-family: digital7;
+        font-weight: 600;
+        font-size: 90px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        background: #080001;
+        color: #F94F6D;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+    
+    .incre-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #new-game-btn {
+        display: block;
+        margin-top: 50px;
+        width: 250px;
+        height: 60px;
+        font-size: 38px;
+    }
+ 
 }
